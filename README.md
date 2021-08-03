@@ -1,6 +1,8 @@
 # Table to Excel 2
 
-[![Build Status](https://travis-ci.org/linways/table-to-excel.svg?branch=master)](https://travis-ci.org/linways/table-to-excel)
+[![Build Status](https://app.travis-ci.com/stanlystark/table-to-excel.svg?branch=master)](https://travis-ci.com/stanlystark/table-to-excel)
+
+Fork [linways/table-to-excel](https://github.com/linways/table-to-excel)
 
 Export HTML table to valid excel file effortlessly.
 This library uses [exceljs/exceljs](https://github.com/exceljs/exceljs) under the hood to create the excel.  
@@ -19,11 +21,11 @@ Just add a script tag:
 ## Node
 
 ```bash
-npm install @linways/table-to-excel --save
+npm install @stanlystark/table-to-excel --save
 ```
 
 ```javascript
-import TableToExcel from "@linways/table-to-excel";
+import TableToExcel from "@stanlystark/table-to-excel";
 ```
 
 # Usage
@@ -56,6 +58,7 @@ Cell types can be set using the following data attributes:
 
 | Attribute        | Description                        | Possible Values                                                            |
 | ---------------- | ---------------------------------- | -------------------------------------------------------------------------- |
+| `data-v`         | Custom value                       | String                                 |
 | `data-t`         | To specify the data type of a cell | `s` : String (Default)<br> `n` : Number <br> `b` : Boolean <br> `d` : Date |
 | `data-hyperlink` | To add hyper link to cell          | External URL or hyperlink to another sheet                                 |
 | `data-error`     | To add value of a cell as error    |                                                                            |
@@ -63,6 +66,8 @@ Cell types can be set using the following data attributes:
 Example:
 
 ```html
+<!-- for setting a cell with custom value -->
+<td data-v="2500">2500 $</td>
 <!-- for setting a cell type as number -->
 <td data-t="n">2500</td>
 <!-- for setting a cell type as date -->
@@ -164,9 +169,9 @@ Example:
 
 ## 1.0.0
 
-[Migration Guide](https://github.com/linways/table-to-excel/wiki/Migration-guide-for-V0.2.1-to-V1.0.0) for migrating from V0.2.1 to V1.0.0
+[Migration Guide](https://github.com/stanlystark/table-to-excel/wiki/Migration-guide-for-V0.2.1-to-V1.0.0) for migrating from V0.2.1 to V1.0.0
 
-- Changed the backend to Exce[exceljs/exceljs](https://github.com/exceljs/exceljs)lJS
+- Changed the backend to ExcellJS [exceljs/exceljs](https://github.com/exceljs/exceljs)
 - Added border color
 - Option to set style and color for all borders
 - Exclude row
@@ -186,3 +191,7 @@ Example:
 ## 1.0.3
 
 - Option to specify row height
+
+## 1.0.6
+
+- Added custom value

@@ -1,16 +1,16 @@
 {
-  "name": "@linways/table-to-excel",
-  "version": "1.0.4",
+  "name": "@stanlystark/table-to-excel",
+  "version": "1.0.6",
   "description": "Javascript library to create 'valid' excel file from html table with styles",
   "main": "./dist/tableToExcel.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linways/table-to-excel"
+    "url": "https://github.com/stanlystark/table-to-excel"
   },
   "bugs": {
-    "url": "https://github.com/linways/table-to-excel/issues"
+    "url": "https://github.com/stanlystark/table-to-excel/issues"
   },
-  "homepage": "https://github.com/linways/table-to-excel#readme",
+  "homepage": "https://github.com/stanlystark/table-to-excel#readme",
   "keywords": [
     "html table to excel",
     "excel with styles",

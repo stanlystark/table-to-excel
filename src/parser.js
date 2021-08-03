@@ -141,7 +141,8 @@ const TTEParser = (function() {
    */
   let getValue = function(td) {
     let dataType = td.getAttribute("data-t");
-    let rawVal = htmldecode(td.innerHTML);
+    let dataValue = td.getAttribute("data-v");
+    let rawVal = dataValue ? dataValue : htmldecode(td.innerHTML);
     if (dataType) {
       let val;
       switch (dataType) {
